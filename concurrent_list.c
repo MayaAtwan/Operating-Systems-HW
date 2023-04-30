@@ -154,7 +154,7 @@ void remove_value(list* list, int value)
     if (list && list->head) {/*make sure they did not pass a NULL or empty list as a variable*/
         prev = list->head;
         curr = prev->next;
-        pthread_mutex_unlock(&(list->head)->locked);
+        pthread_mutex_lock(&(list->head)->locked);
         //if the wanted node is the head(minimal value)
         if (value == prev->value)
         {
