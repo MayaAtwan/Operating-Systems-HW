@@ -4,7 +4,7 @@
 #include <limits.h>
 #include "concurrent_list.h"
 
-
+// it's mahmoud from GitHub
 struct node {
     int value;
     node* next;
